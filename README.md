@@ -1,10 +1,10 @@
 # GenAI for Software Development Assignment 1
 Lynelle Chen, Ben Tremblay, Rowan Miller
 
-* [1 Introduction](##1-introduction)  
-* [2 Setup](##2-setup)
-* [3 Run Model](##3-run-model)
-* [4 Report](##4-report)
+* [1 Introduction](#1-introduction)  
+* [2 Setup](#2-setup)
+* [3 Run Model](#3-run-model)
+* [4 Report](#4-report)
 
 ## **1. Introduction**  
 We have developed a model to automatically complete a Java method given a starting set of code tokens. Our model uses the N-gram method to predict the next token in a sequence given (N - 1) preceding tokens. It is trained on a corpus of public GitHub repositories and stores the frequency of all sequences of N consecutive tokens. When predicting the next token in a sequence, it chooses the one with the highest probability in the training corpus. Our model was evaluated by being asked to automatically complete a method given only its first (N - 1) tokens.
